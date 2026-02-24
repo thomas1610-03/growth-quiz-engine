@@ -1,0 +1,136 @@
+{
+  "questions": [
+    {
+      "id": "primaryConcerns",
+      "screenId": "q1-concerns",
+      "question": "Which areas affect you the most?",
+      "microCopy": "Select all that apply.",
+      "type": "multi",
+      "autoAdvance": false,
+      "progress": 10,
+      "options": [
+        { "id": "energy-fatigue", "label": "Energy & Fatigue", "icon": "Zap", "emoji": "⚡" },
+        { "id": "sleep-quality", "label": "Sleep Quality", "icon": "Moon", "emoji": "🌙" },
+        { "id": "stress-mood", "label": "Stress & Mood", "icon": "Heart", "emoji": "🎭" },
+        { "id": "physical-comfort", "label": "Physical Comfort", "icon": "Activity", "emoji": "🏃" },
+        { "id": "focus-clarity", "label": "Focus & Clarity", "icon": "Brain", "emoji": "🧠" },
+        { "id": "nutrition-weight", "label": "Nutrition & Weight", "icon": "Scale", "emoji": "⚖️" }
+      ]
+    },
+    {
+      "id": "severity1Score",
+      "screenId": "q2-severity-1",
+      "question": "How severe is {concern1} on a scale of 0–10?",
+      "type": "slider-frequency",
+      "autoAdvance": false,
+      "progress": 25
+    },
+    {
+      "id": "severity2Score",
+      "screenId": "q3-severity-2",
+      "question": "How severe is {concern2} on a scale of 0–10?",
+      "type": "slider-frequency",
+      "autoAdvance": false,
+      "progress": 35,
+      "_note": "Conditional: only shown if 2+ concerns selected"
+    },
+    {
+      "id": "currentApproach",
+      "screenId": "q5-approach",
+      "question": "What are you currently doing to address these concerns?",
+      "type": "single",
+      "autoAdvance": true,
+      "progress": 45,
+      "options": [
+        { "id": "nothing", "label": "Nothing — I don't know what helps" },
+        { "id": "self-research", "label": "Self-research (supplements, apps, etc.)" },
+        { "id": "professional", "label": "Professional guidance (doctor/coach)" },
+        { "id": "lifestyle", "label": "Exercise & lifestyle changes" },
+        { "id": "nothing-works", "label": "I've tried many things — nothing really works" }
+      ]
+    },
+    {
+      "id": "assessmentStatus",
+      "screenId": "q6-assessment",
+      "question": "Have you consulted a professional about these concerns?",
+      "type": "single",
+      "autoAdvance": true,
+      "progress": 55,
+      "options": [
+        { "id": "confirmed", "label": "Yes, professionally assessed" },
+        { "id": "suspected", "label": "I suspect issues, but haven't consulted yet" },
+        { "id": "not-assessed", "label": "No, not assessed yet" }
+      ]
+    },
+    {
+      "id": "age",
+      "screenId": "q7-age",
+      "question": "What is your age group?",
+      "type": "single",
+      "autoAdvance": true,
+      "progress": 60,
+      "options": [
+        { "id": "under-25", "label": "Under 25" },
+        { "id": "25-34", "label": "25–34" },
+        { "id": "35-44", "label": "35–44" },
+        { "id": "45-54", "label": "45–54" },
+        { "id": "55-64", "label": "55–64" },
+        { "id": "65-plus", "label": "65+" }
+      ]
+    },
+    {
+      "id": "lifecyclePhase",
+      "screenId": "q7b-lifecycle",
+      "question": "How would you describe your current life phase?",
+      "type": "single",
+      "autoAdvance": true,
+      "progress": 65,
+      "options": [
+        { "id": "transitioning", "label": "Going through changes", "description": "Transitional phase" },
+        { "id": "established", "label": "Stable but looking to optimize", "description": "Optimization phase" },
+        { "id": "unsure", "label": "Not sure where I stand" }
+      ]
+    },
+    {
+      "id": "mainGoal",
+      "screenId": "q8-goal",
+      "question": "What would be the biggest improvement for you?",
+      "type": "single",
+      "autoAdvance": true,
+      "progress": 75,
+      "options": [
+        { "id": "more-energy", "label": "More energy throughout the day", "emoji": "⚡" },
+        { "id": "better-sleep", "label": "Better sleep quality", "emoji": "😴" },
+        { "id": "less-stress", "label": "Less stress and better mood", "emoji": "🌤️" },
+        { "id": "sharper-focus", "label": "Sharper focus and clarity", "emoji": "🧠" }
+      ]
+    },
+    {
+      "id": "actionReadiness",
+      "screenId": "q9-readiness",
+      "question": "Would you be interested in a personalized action plan with professional guidance?",
+      "type": "single",
+      "autoAdvance": true,
+      "progress": 82,
+      "options": [
+        { "id": "ready-now", "label": "Yes, I'd like a personalized plan" },
+        { "id": "interested-unsure", "label": "Sounds interesting, but not sure yet" },
+        { "id": "tell-me-more", "label": "Tell me more about how it works" }
+      ]
+    }
+  ],
+  "concernLabels": {
+    "energy-fatigue": "Energy & Fatigue",
+    "sleep-quality": "Sleep Quality",
+    "stress-mood": "Stress & Mood",
+    "physical-comfort": "Physical Comfort",
+    "focus-clarity": "Focus & Clarity",
+    "nutrition-weight": "Nutrition & Weight"
+  },
+  "frequencyOptions": [
+    { "id": "rarely", "label": "Rarely (1–2x per month)" },
+    { "id": "several-weekly", "label": "Several times per week" },
+    { "id": "daily", "label": "Daily" },
+    { "id": "multiple-daily", "label": "Multiple times daily" }
+  ]
+}
