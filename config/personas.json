@@ -1,148 +1,18 @@
 {
-  "resultTypes": {
-    "no-concerns": {
-      "id": "no-concerns",
-      "headline": "No Notable Concerns",
-      "subtitle": "Your profile shows no significant concerns right now. Great that you're staying informed.",
-      "description": "Your wellness profile currently shows no notable areas of concern. This can change over time — keep monitoring and retake the assessment in a few months.",
-      "actionModules": [],
-      "nextStepInfo": "No immediate action needed. If concerns develop, you can retake the assessment anytime."
+  "personas": [
+    {
+      "id": "eligibilité-maximale",
+      "title": "Éligible au Maximum des Aides (MaPrimeRénov' + CEE)",
+      "subtitle": "Votre projet bénéficie des subventions les plus élevées de l'État.",
+      "description": "Grâce à la nature de vos travaux et à votre profil, vous pouvez financer une grande partie de votre rénovation énergétique sans avancer de frais importants.",
+      "callToAction": "Lancer mon dossier de subvention"
     },
-    "mild-concerns": {
-      "id": "mild-concerns",
-      "headline": "Mild Concerns Detected",
-      "subtitle": "Your body is sending early signals — and you're listening. That's the right time to act.",
-      "description": "Your profile shows mild but noticeable patterns. Early action can prevent concerns from intensifying. A structured plan helps you stay in control.",
-      "actionModules": [
-        {
-          "moduleRange": "Module 1–3",
-          "title": "Foundations & Prevention",
-          "description": "Understand what's happening and learn evidence-based daily strategies.",
-          "icon": "📚"
-        },
-        {
-          "moduleRange": "Module 4–6",
-          "title": "Personalized Exercises",
-          "description": "Short daily programs tailored to your specific concern combination.",
-          "icon": "🧘"
-        }
-      ],
-      "nextStepInfo": "Your plan can help you manage concerns early. Get started with your personalized action plan."
-    },
-    "moderate-concerns": {
-      "id": "moderate-concerns",
-      "headline": "Moderate Concerns",
-      "subtitle": "You're carrying more than most people see. There's a plan that can help.",
-      "description": "Your profile shows noticeable concerns affecting your daily life. The good news: this is exactly the stage where evidence-based interventions are most effective.",
-      "actionModules": [
-        {
-          "moduleRange": "Module 1–3",
-          "title": "Targeted Management",
-          "description": "Focused strategies for your strongest concerns — based on your profile.",
-          "icon": "🎯"
-        },
-        {
-          "moduleRange": "Module 7–9",
-          "title": "Sleep & Recovery",
-          "description": "7-night program: temperature, timing, breathing techniques — tailored for you.",
-          "icon": "🌙"
-        },
-        {
-          "moduleRange": "SOS Plan",
-          "title": "Quick Relief",
-          "description": "Instant strategies for acute episodes of your top concerns.",
-          "icon": "⚡"
-        }
-      ],
-      "nextStepInfo": "Your personalized plan is ready. A professional can help you get the most out of it."
-    },
-    "significant-concerns": {
-      "id": "significant-concerns",
-      "headline": "Significant Concerns",
-      "subtitle": "Your concerns are noticeably impacting your life. You deserve targeted support — and you're getting it now.",
-      "description": "Your profile shows considerable impact on your daily life. This is common — and there's effective, evidence-based help available. We also recommend professional guidance.",
-      "actionModules": [
-        {
-          "moduleRange": "Module 1–3",
-          "title": "Intensive Energy Program",
-          "description": "CBT-based techniques proven to reduce fatigue and boost energy by 40-60%.",
-          "icon": "🔥"
-        },
-        {
-          "moduleRange": "Module 7–9",
-          "title": "Sleep Intensive",
-          "description": "Adapted sleep program. Measurable improvement in 2-3 weeks.",
-          "icon": "🌙"
-        },
-        {
-          "moduleRange": "Module 10–12",
-          "title": "Emotional Balance",
-          "description": "Mindfulness + cognitive techniques targeting stress-related mood changes.",
-          "icon": "🧠"
-        },
-        {
-          "moduleRange": "SOS Plan",
-          "title": "Immediate Support",
-          "description": "2-minute interventions for acute episodes.",
-          "icon": "🆘"
-        }
-      ],
-      "nextStepInfo": "Given your concern level, professional support is especially valuable. Get your full personalized plan and consider consulting a professional."
-    },
-    "severe-concerns": {
-      "id": "severe-concerns",
-      "headline": "Severe Concerns",
-      "subtitle": "You're going through an extremely challenging time. You're not alone — and there's concrete help available.",
-      "description": "Your profile shows significant impact. This is not a sign of weakness — many people experience similar levels. Evidence-based support can meaningfully improve your quality of life. Please seek professional guidance soon.",
-      "actionModules": [
-        {
-          "moduleRange": "Module 1–3",
-          "title": "Intensive Energy Program",
-          "description": "CBT-based techniques proven to reduce fatigue and boost energy by 40-60%.",
-          "icon": "🔥"
-        },
-        {
-          "moduleRange": "Module 7–9",
-          "title": "Sleep Intensive",
-          "description": "Adapted sleep program. Measurable improvement in 2-3 weeks.",
-          "icon": "🌙"
-        },
-        {
-          "moduleRange": "Module 10–12",
-          "title": "Emotional Balance",
-          "description": "Mindfulness + cognitive techniques targeting stress-related mood changes.",
-          "icon": "🧠"
-        },
-        {
-          "moduleRange": "SOS Plan",
-          "title": "Immediate Support",
-          "description": "2-minute interventions for acute episodes.",
-          "icon": "🆘"
-        }
-      ],
-      "nextStepInfo": "Given the severity of your concerns, professional support is strongly recommended. Get your full plan and please schedule a consultation soon."
+    {
+      "id": "prime-intermediaire",
+      "title": "Éligible aux Primes Énergie & CEE",
+      "subtitle": "De belles opportunités d'économies sur votre facture.",
+      "description": "Votre foyer est éligible aux Certificats d'Économies d'Énergie (CEE) ainsi qu'à plusieurs coups de pouce financiers pour réduire le coût de vos travaux.",
+      "callToAction": "Parler à un conseiller expert"
     }
-  },
-  "phaseLabels": {
-    "early": "Early Phase",
-    "mid": "Mid Phase",
-    "advanced": "Advanced Phase"
-  },
-  "severityLabels": {
-    "none": "No Concerns",
-    "mild": "Mild Concerns",
-    "moderate": "Moderate Concerns",
-    "significant": "Significant Concerns",
-    "severe": "Severe Concerns"
-  },
-  "impactLabels": {
-    "low": "Low Impact",
-    "medium": "Medium Impact",
-    "high": "High Impact"
-  },
-  "readinessLabels": {
-    "high": "High Readiness",
-    "medium": "Medium Readiness",
-    "low": "Not Ready Yet"
-  }
+  ]
 }
