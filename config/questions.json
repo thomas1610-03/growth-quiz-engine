@@ -1,136 +1,83 @@
 {
   "questions": [
     {
-      "id": "primaryConcerns",
-      "screenId": "q1-concerns",
-      "question": "Which areas affect you the most?",
-      "microCopy": "Select all that apply.",
+      "id": "projectType",
+      "screenId": "q1-project",
+      "question": "Quels types de travaux énergétiques envisagez-vous ?",
+      "microCopy": "Sélectionnez tout ce qui s'applique.",
       "type": "multi",
       "autoAdvance": false,
       "progress": 10,
       "options": [
-        { "id": "energy-fatigue", "label": "Energy & Fatigue", "icon": "Zap", "emoji": "⚡" },
-        { "id": "sleep-quality", "label": "Sleep Quality", "icon": "Moon", "emoji": "🌙" },
-        { "id": "stress-mood", "label": "Stress & Mood", "icon": "Heart", "emoji": "🎭" },
-        { "id": "physical-comfort", "label": "Physical Comfort", "icon": "Activity", "emoji": "🏃" },
-        { "id": "focus-clarity", "label": "Focus & Clarity", "icon": "Brain", "emoji": "🧠" },
-        { "id": "nutrition-weight", "label": "Nutrition & Weight", "icon": "Scale", "emoji": "⚖️" }
+        { "id": "isolation", "label": "Isolation (combles, murs, sols)", "icon": "Home", "emoji": "🏠" },
+        { "id": "chauffage", "label": "Chauffage (Pompe à chaleur, chaudière...)", "icon": "Flame", "emoji": "🔥" },
+        { "id": "solaire", "label": "Panneaux solaires photovoltaïques", "icon": "Sun", "emoji": "☀️" },
+        { "id": "ventilation", "label": "Ventilation et VMC", "icon": "Wind", "emoji": "💨" },
+        { "id": "menuiseries", "label": "Fenêtres et menuiseries", "icon": "Columns", "emoji": "🪟" }
       ]
     },
     {
-      "id": "severity1Score",
-      "screenId": "q2-severity-1",
-      "question": "How severe is {concern1} on a scale of 0–10?",
-      "type": "slider-frequency",
-      "autoAdvance": false,
-      "progress": 25
-    },
-    {
-      "id": "severity2Score",
-      "screenId": "q3-severity-2",
-      "question": "How severe is {concern2} on a scale of 0–10?",
-      "type": "slider-frequency",
-      "autoAdvance": false,
-      "progress": 35,
-      "_note": "Conditional: only shown if 2+ concerns selected"
-    },
-    {
-      "id": "currentApproach",
-      "screenId": "q5-approach",
-      "question": "What are you currently doing to address these concerns?",
+      "id": "propertyType",
+      "screenId": "q2-property",
+      "question": "Quel type de logement est concerné par les travaux ?",
       "type": "single",
       "autoAdvance": true,
-      "progress": 45,
+      "progress": 30,
       "options": [
-        { "id": "nothing", "label": "Nothing — I don't know what helps" },
-        { "id": "self-research", "label": "Self-research (supplements, apps, etc.)" },
-        { "id": "professional", "label": "Professional guidance (doctor/coach)" },
-        { "id": "lifestyle", "label": "Exercise & lifestyle changes" },
-        { "id": "nothing-works", "label": "I've tried many things — nothing really works" }
+        { "id": "house", "label": "Maison individuelle" },
+        { "id": "apartment", "label": "Appartement" }
       ]
     },
     {
-      "id": "assessmentStatus",
-      "screenId": "q6-assessment",
-      "question": "Have you consulted a professional about these concerns?",
+      "id": "propertyAge",
+      "screenId": "q3-age",
+      "question": "Quel est l'âge de votre logement ?",
       "type": "single",
       "autoAdvance": true,
-      "progress": 55,
+      "progress": 50,
       "options": [
-        { "id": "confirmed", "label": "Yes, professionally assessed" },
-        { "id": "suspected", "label": "I suspect issues, but haven't consulted yet" },
-        { "id": "not-assessed", "label": "No, not assessed yet" }
+        { "id": "less-2", "label": "Moins de 2 ans" },
+        { "id": "between-2-15", "label": "Entre 2 et 15 ans" },
+        { "id": "more-15", "label": "Plus de 15 ans" }
       ]
     },
     {
-      "id": "age",
-      "screenId": "q7-age",
-      "question": "What is your age group?",
+      "id": "occupantStatus",
+      "screenId": "q4-status",
+      "question": "Quel est votre statut pour ce logement ?",
       "type": "single",
       "autoAdvance": true,
-      "progress": 60,
+      "progress": 70,
       "options": [
-        { "id": "under-25", "label": "Under 25" },
-        { "id": "25-34", "label": "25–34" },
-        { "id": "35-44", "label": "35–44" },
-        { "id": "45-54", "label": "45–54" },
-        { "id": "55-64", "label": "55–64" },
-        { "id": "65-plus", "label": "65+" }
-      ]
-    },
-    {
-      "id": "lifecyclePhase",
-      "screenId": "q7b-lifecycle",
-      "question": "How would you describe your current life phase?",
-      "type": "single",
-      "autoAdvance": true,
-      "progress": 65,
-      "options": [
-        { "id": "transitioning", "label": "Going through changes", "description": "Transitional phase" },
-        { "id": "established", "label": "Stable but looking to optimize", "description": "Optimization phase" },
-        { "id": "unsure", "label": "Not sure where I stand" }
-      ]
-    },
-    {
-      "id": "mainGoal",
-      "screenId": "q8-goal",
-      "question": "What would be the biggest improvement for you?",
-      "type": "single",
-      "autoAdvance": true,
-      "progress": 75,
-      "options": [
-        { "id": "more-energy", "label": "More energy throughout the day", "emoji": "⚡" },
-        { "id": "better-sleep", "label": "Better sleep quality", "emoji": "😴" },
-        { "id": "less-stress", "label": "Less stress and better mood", "emoji": "🌤️" },
-        { "id": "sharper-focus", "label": "Sharper focus and clarity", "emoji": "🧠" }
+        { "id": "owner-occupant", "label": "Propriétaire occupant" },
+        { "id": "landlord", "label": "Propriétaire bailleur" },
+        { "id": "tenant", "label": "Locataire" }
       ]
     },
     {
       "id": "actionReadiness",
-      "screenId": "q9-readiness",
-      "question": "Would you be interested in a personalized action plan with professional guidance?",
+      "screenId": "q5-readiness",
+      "question": "Souhaitez-vous recevoir une estimation détaillée de vos aides financières (MaPrimeRénov', CEE...) ?",
       "type": "single",
       "autoAdvance": true,
-      "progress": 82,
+      "progress": 90,
       "options": [
-        { "id": "ready-now", "label": "Yes, I'd like a personalized plan" },
-        { "id": "interested-unsure", "label": "Sounds interesting, but not sure yet" },
-        { "id": "tell-me-more", "label": "Tell me more about how it works" }
+        { "id": "ready-now", "label": "Oui, calculer mes aides immédiatement" },
+        { "id": "interested-unsure", "label": "Je me renseigne pour l'instant" },
+        { "id": "talk-advisor", "label": "Être rappelé par un conseiller expert" }
       ]
     }
   ],
   "concernLabels": {
-    "energy-fatigue": "Energy & Fatigue",
-    "sleep-quality": "Sleep Quality",
-    "stress-mood": "Stress & Mood",
-    "physical-comfort": "Physical Comfort",
-    "focus-clarity": "Focus & Clarity",
-    "nutrition-weight": "Nutrition & Weight"
+    "isolation": "Isolation",
+    "chauffage": "Chauffage",
+    "solaire": "Panneaux solaires",
+    "ventilation": "Ventilation",
+    "menuiseries": "Menuiseries"
   },
   "frequencyOptions": [
-    { "id": "rarely", "label": "Rarely (1–2x per month)" },
-    { "id": "several-weekly", "label": "Several times per week" },
-    { "id": "daily", "label": "Daily" },
-    { "id": "multiple-daily", "label": "Multiple times daily" }
+    { "id": "urgent", "label": "Le plus rapidement possible" },
+    { "id": "few-months", "label": "Dans les 3 à 6 mois" },
+    { "id": "later", "label": "Plus tard dans l'année" }
   ]
 }
